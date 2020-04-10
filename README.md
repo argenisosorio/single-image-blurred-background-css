@@ -2,8 +2,6 @@
 
 ![capture-1.jpg](capture-1.jpg "capture-1.jpg")
 
-<a href="">Demo</a>
-
-<br>
+<a href="https://argenisosorio.github.io/single-image-blurred-background-css/">Demo</a>
 
 Based on: <a href="https://codepen.io/vsync/pen/gjMEWm">https://codepen.io/vsync/pen/gjMEWm</a>
