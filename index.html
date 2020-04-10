@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <link rel="stylesheet" href="static/normalize.min.css">
+</head>
+<style type="text/css">
+body {
+  background: url("static/x.jpg") 0 0/cover fixed no-repeat;
+  overflow: hidden;
+}
+.box::before {
+  content: '';
+  background: url("static/x.jpg") 0 0/cover fixed no-repeat;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  left: calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font: 1.5vw Arial;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+</style>
+<body>
+<div class="box">
+  <span>Drag Me</span>
+</div>
+<script src='static/jquery-2.2.4.min.js'></script>
+<script src='static/jquery-ui.min.js'></script>
+<script type="text/javascript"> 
+$("document").ready(function(){
+  $(".box").draggable();
+});
+</script>
+</body>
+</html>
